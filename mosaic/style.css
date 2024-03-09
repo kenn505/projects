@@ -1,0 +1,95 @@
+:root{
+    font-size:4vw;
+}
+*{
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+    padding:0;
+    box-sizing: border-box;
+    cursor:default;
+}
+*::-webkit-scrollbar{
+    display:none
+}
+main{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+}
+card-o{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.q-36-card{
+    background-color: white;
+    position:absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(1);
+    display: block;
+    width: 80vw;
+    aspect-ratio: 1/1.5;
+    border: 1px solid black;
+    padding: 3rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: transform 0.5s;
+}
+.q-36-card p{
+    text-align: center;
+}
+#buttons{
+    width:100%;
+    position: absolute;
+    top:calc(50vh + 60vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buttons button{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 35vw;
+    font-size: 1.2rem;
+    border:none;
+    background: none;
+}
+.q-36-card div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.q-36-card button{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border:none;
+    background: none;
+}
+error-o{
+    display: none;
+}
+@media screen and (min-aspect-ratio: 1/1.4) {
+    main{
+        display: none;
+    }
+    error-o{
+        display: block;
+    }
+    error-o h2{
+    padding:3rem;
+    font-size:0.61rem;
+    font-weight: 100;
+    font-family: sans-serif;
+    }
+}
